@@ -36,17 +36,17 @@
             </ul>
 
             <!-- Кнопка-бургер для мобильных (<768px) -->
-            <button class="site-burger uk-hidden@m" type="button" uk-toggle="target: #mobile-menu">
-                <span uk-icon="menu"></span>
+            <button class="site-burger uk-hidden@m" type="button" data-uk-toggle="target: #mobile-menu">
+                <span data-uk-icon="menu"></span>
             </button>
 
         </nav>
     
 
         <!-- Выезжающее мобильное меню -->
-        <div id="mobile-menu" uk-offcanvas>
+        <div id="mobile-menu" data-uk-offcanvas>
             <div class="uk-offcanvas-bar">
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <button class="uk-offcanvas-close" type="button" data-uk-close></button>
                 <ul class="uk-nav uk-nav-default site-mobile-menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="pages/01-prehistory.html">1830–1960</a></li>
@@ -171,9 +171,8 @@
     <div class="video-wrap">
         <iframe
             src="https://rutube.ru/play/embed/d0083237b05b97cfdaebb13094d44443/"
-            frameborder="0"
             allowfullscreen
-            title="История интернета - документальный фильм">
+            title="История интернета">
         </iframe>
     </div>
 

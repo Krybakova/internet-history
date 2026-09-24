@@ -412,3 +412,7 @@ min-width: 768px {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
+
+.video_wrap iframe {
+    border: 0;
+}
