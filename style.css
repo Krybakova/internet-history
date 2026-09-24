@@ -216,7 +216,7 @@ ul {
     gap: 30px;
 }
 
-min-width: 768px {
+@media (min-width: 768px) {
     .site-footer__inner {
         grid-template-columns: repeat(3, 1fr);
     }
