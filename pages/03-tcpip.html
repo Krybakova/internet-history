@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Протоколы TCP/IP">
+    <title>TCP/IP - NetHistory</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="site-nav">
+
+            <a href="../index.html" class="site-logo">NetHistory</a>
+
+            <ul class="site-menu uk-visible@m">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="01-prehistory.html">1830–1960</a></li>
+                <li><a href="02-arpanet.html">ARPANET</a></li>
+                <li><a href="03-tcpip.html">TCP/IP</a></li>
+                <li><a href="04-www.html">WWW</a></li>
+                <li><a href="05-web1.html">WEB 1.0</a></li>
+                <li><a href="06-web2.html">WEB 2.0</a></li>
+                <li><a href="07-modern.html">Современность</a></li>
+            </ul>
+
+            <button class="site-burger uk-hidden@m" type="button" uk-toggle="target: #mobile-menu">
+                <span uk-icon="menu"></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <div id="mobile-menu" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default site-mobile-menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="01-prehistory.html">1830–1960</a></li>
+                <li><a href="02-arpanet.html">ARPANET</a></li>
+                <li><a href="03-tcpip.html">TCP/IP</a></li>
+                <li><a href="04-www.html">WWW</a></li>
+                <li><a href="05-web1.html">WEB 1.0</a></li>
+                <li><a href="06-web2.html">WEB 2.0</a></li>
+                <li><a href="07-modern.html">Современность</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="site-wrapper">
+
+        <main class="site-main">
+    <h1>TCP/IP</h1>
+
+    <p><strong>TCP/IP</strong> - это набор протоколов, на котором работает весь современный интернет. Без него не было бы ни сайтов, ни электронной почты, ни видеозвонков. Название расшифровывается как <em>Transmission Control Protocol / Internet Protocol</em> - протокол управления передачей и межсетевой протокол.</p>
+    <figure class="site-figure">
+    <img
+        src="../images/tcpip-diagram.jpg"
+        srcset="../images/tcp_ip-small.jpg 400w,
+                ../images/tcp_ip-medium.jpg 800w,
+                ../images/tcp_ip.jpg 1200w"
+        sizes="(max-width: 768px) 100vw, 800px"
+        alt="Схема работы протокола TCP/IP"
+        title="TCP/IP — схема работы протоколов"
+        loading="lazy"
+        class="site-figure__img">
+    <figcaption class="site-figure__caption">
+        Схема работы протоколов TCP/IP
+    </figcaption>
+</figure>
+    <p>До появления TCP/IP разные сети использовали собственные протоколы и не могли общаться друг с другом. Задача состояла в том, чтобы объединить их в единую «сеть сетей» - так появился интернет.</p>
+
+    <h2>Разработка</h2>
+
+    <p>В 1974 году <strong>Винтон Серф</strong> и <strong>Роберт Кан</strong> опубликовали статью «Протокол для межсетевого обмена пакетами». В ней они описали, как соединить разные сети в одну. За эту работу их позже назвали «отцами интернета».</p>
+
+    <p>К 1978 году протокол был разделён на два:</p>
+
+    <ul>
+        <li><strong>TCP</strong> (Transmission Control Protocol) - отвечает за надёжную передачу данных: разбивает информацию на пакеты, проверяет, что все они дошли, и собирает обратно в правильном порядке.</li>
+        <li><strong>IP</strong> (Internet Protocol) - отвечает за адресацию: каждому устройству присваивается уникальный адрес, по которому пакеты находят нужный компьютер.</li>
+    </ul>
+
+    <h2>Как это работает</h2>
+
+    <p>Когда вы открываете сайт, ваш компьютер отправляет запрос. TCP разбивает его на пакеты, IP присваивает каждому адрес отправителя и получателя. Пакеты идут через десятки промежуточных узлов, могут добираться разными путями. На сервере TCP собирает их обратно и восстанавливает исходный запрос. Ответ возвращается тем же путём.</p>
+
+    <p>Именно поэтому интернет устойчив: если один маршрут недоступен, пакеты пойдут другим.</p>
+
+    <h2>1 января 1983 года</h2>
+
+    <p>Это ключевая дата в истории интернета. В этот день <strong>ARPANET</strong> полностью перешла на TCP/IP. Все старые протоколы были отключены. Этот момент называют «днём рождения интернета» в его современном виде - с этого момента разные сети могли соединяться друг с другом.</p>
+
+    <p>Сегодня TCP/IP используется везде: в браузерах, мессенджерах, видеосвязи, онлайн-играх, умных устройствах. Это фундамент, на котором держится вся цифровая инфраструктура мира.</p>
+
+    <h2>Ключевые даты</h2>
+
+    <ul>
+        <li><strong>1974</strong> - статья Серфа и Кана, идея TCP/IP.</li>
+        <li><strong>1978</strong> - разделение на TCP и IP.</li>
+        <li><strong>1981</strong> - стандарт TCP/IP опубликован.</li>
+        <li><strong>1983</strong> - ARPANET переходит на TCP/IP.</li>
+        <li><strong>1990-е</strong> - TCP/IP становится мировым стандартом.</li>
+    </ul>
+</main>
+
+        <aside class="site-sidebar">
+
+            <div class="sidebar-block">
+                <h3 class="sidebar-block__title">Разделы</h3>
+                <div class="sidebar-cards">
+
+                    <a href="01-prehistory.html" class="sidebar-card">
+                        <span class="sidebar-card__num">01</span>
+                        <span class="sidebar-card__text">1830–1960</span>
+                    </a>
+
+                    <a href="02-arpanet.html" class="sidebar-card">
+                        <span class="sidebar-card__num">02</span>
+                        <span class="sidebar-card__text">ARPANET</span>
+                    </a>
+
+                    <a href="03-tcpip.html" class="sidebar-card">
+                        <span class="sidebar-card__num">03</span>
+                        <span class="sidebar-card__text">TCP/IP</span>
+                    </a>
+
+                    <a href="04-www.html" class="sidebar-card">
+                        <span class="sidebar-card__num">04</span>
+                        <span class="sidebar-card__text">WWW</span>
+                    </a>
+
+                    <a href="05-web1.html" class="sidebar-card">
+                        <span class="sidebar-card__num">05</span>
+                        <span class="sidebar-card__text">WEB 1.0</span>
+                    </a>
+
+                    <a href="06-web2.html" class="sidebar-card">
+                        <span class="sidebar-card__num">06</span>
+                        <span class="sidebar-card__text">WEB 2.0</span>
+                    </a>
+
+                    <a href="07-modern.html" class="sidebar-card">
+                        <span class="sidebar-card__num">07</span>
+                        <span class="sidebar-card__text">Современность</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="sidebar-block sidebar-block--quote">
+                <p>«Интернет — это не технология. Это способ существования информации».</p>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+
+            <div class="site-footer__col">
+                <h4>Автор сайта</h4>
+                <p>Рыбакова Ксения Эдуардовна</p>
+                <p>Группа: 335</p>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>Связь</h4>
+                <ul>
+                    <li>Email: <a href="mailto:krybakova296@gmail.com">krybakova296@gmail.com</a></li>
+                    <li>ВК: <a href="https://vk.com/k__rybakova">vk.com/k__rybakova</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>GitHub</h4>
+                <ul>
+                    <li><a href="https://github.com/Krybakova">github.com/Krybakova</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="site-footer__bottom">
+            <p>© 2026</p>
+        </div>
+    </footer>
+<button id="scrollTop" class="scroll-top" type="button" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="../script.js"></script>
+</body>
+</html>

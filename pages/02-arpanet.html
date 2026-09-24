@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Первая компьютерная сеть">
+    <title>ARPANET - NetHistory</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="site-nav">
+
+            <a href="../index.html" class="site-logo">NetHistory</a>
+
+            <ul class="site-menu uk-visible@m">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="01-prehistory.html">1830–1960</a></li>
+                <li><a href="02-arpanet.html">ARPANET</a></li>
+                <li><a href="03-tcpip.html">TCP/IP</a></li>
+                <li><a href="04-www.html">WWW</a></li>
+                <li><a href="05-web1.html">WEB 1.0</a></li>
+                <li><a href="06-web2.html">WEB 2.0</a></li>
+                <li><a href="07-modern.html">Современность</a></li>
+            </ul>
+
+            <button class="site-burger uk-hidden@m" type="button" uk-toggle="target: #mobile-menu">
+                <span uk-icon="menu"></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <div id="mobile-menu" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default site-mobile-menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="01-prehistory.html">1830–1960</a></li>
+                <li><a href="02-arpanet.html">ARPANET</a></li>
+                <li><a href="03-tcpip.html">TCP/IP</a></li>
+                <li><a href="04-www.html">WWW</a></li>
+                <li><a href="05-web1.html">WEB 1.0</a></li>
+                <li><a href="06-web2.html">WEB 2.0</a></li>
+                <li><a href="07-modern.html">Современность</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="site-wrapper">
+
+        <main class="site-main">
+    <h1>ARPANET</h1>
+
+    <p><strong>ARPANET</strong> (Advanced Research Projects Agency Network) - первая в мире компьютерная сеть, запущенная в 1969 году. Она стала прямым предшественником современного интернета и доказала, что компьютеры могут обмениваться данными на больших расстояниях.</p>
+    <figure class="site-figure">
+    <img
+        src="../images/arpanet-map.jpg"
+        srcset="../images/arpanet-map-small.jpg 400w,
+                ../images/arpanet-map-medium.jpg 800w,
+                ../images/arpanet-map.jpg 1200w"
+        sizes="(max-width: 768px) 100vw, 800px"
+        alt="Карта первых узлов сети ARPANET, 1969 год"
+        title="ARPANET — карта сети 1969 года"
+        loading="lazy"
+        class="site-figure__img">
+    <figcaption class="site-figure__caption">
+        Карта первых узлов ARPANET (1970)
+    </figcaption>
+</figure>
+    <p>Идея создания сети принадлежала <strong>Джозефу Ликлайдеру</strong> и <strong>Роберту Тейлору</strong> из Агентства перспективных исследовательских проектов США (ARPA). В 1966 году началась разработка, а в 1969 году сеть была запущена.</p>
+
+    <h2>Первые четыре узла</h2>
+
+    <p>29 октября 1969 года в сеть были объединены четыре университета США:</p>
+
+    <ul>
+        <li><strong>UCLA</strong> (Калифорнийский университет в Лос-Анджелесе).</li>
+        <li><strong>SRI</strong> (Стэнфордский исследовательский институт).</li>
+        <li><strong>UCSB</strong> (Калифорнийский университет в Санта-Барбаре).</li>
+        <li><strong>Университет Юты</strong>.</li>
+    </ul>
+
+    <p>Первый сеанс связи состоялся между UCLA и SRI. Планировалось передать слово <em>LOGIN</em>, но система упала после двух букв - <em>LO</em>. Так 29 октября 1969 года в 22:30 по местному времени было отправлено первое в истории сообщение по сети.</p>
+
+    <h2>Как работала сеть</h2>
+
+    <p>ARPANET использовала технологию <strong>коммутации пакетов</strong> (packet switching). Данные разбивались на небольшие фрагменты - пакеты, - которые могли идти к цели разными маршрутами и собирались в исходное сообщение на другом конце. Это делало сеть устойчивой: если один узел выходил из строя, пакеты шли по другим путям.</p>
+
+    <p>Именно эта идея, предложенная <strong>Полом Бэраном</strong> и <strong>Дональдом Дэвисом</strong>, стала основой современных сетей.</p>
+
+    <h2>Развитие</h2>
+
+    <p>К 1971 году в ARPANET было уже 15 узлов, к 1973 - 37, а к 1981 году - более 200. Сеть росла, к ней подключались университеты, исследовательские центры, военные объекты. Появились первые приложения: электронная почта, передача файлов, удалённый доступ к компьютерам.</p>
+
+    <p>В 1983 году ARPANET перешла на протокол <strong>TCP/IP</strong>, который используется до сих пор. Этот момент считается днём рождения современного интернета. Об этом - на следующей странице.</p>
+
+    <h2>Ключевые даты</h2>
+
+    <ul>
+        <li><strong>1966</strong> - начало разработки ARPANET.</li>
+        <li><strong>1969</strong> - запуск сети, первое сообщение «LO».</li>
+        <li><strong>1971</strong> - 15 узлов, первая электронная почта.</li>
+        <li><strong>1973</strong> - 37 узлов, первые международные подключения.</li>
+        <li><strong>1983</strong> - переход на TCP/IP.</li>
+        <li><strong>1990</strong> - ARPANET официально закрыта, её заменил интернет.</li>
+    </ul>
+</main>
+
+        <aside class="site-sidebar">
+
+            <div class="sidebar-block">
+                <h3 class="sidebar-block__title">Разделы</h3>
+                <div class="sidebar-cards">
+
+                    <a href="01-prehistory.html" class="sidebar-card">
+                        <span class="sidebar-card__num">01</span>
+                        <span class="sidebar-card__text">1830–1960</span>
+                    </a>
+
+                    <a href="02-arpanet.html" class="sidebar-card">
+                        <span class="sidebar-card__num">02</span>
+                        <span class="sidebar-card__text">ARPANET</span>
+                    </a>
+
+                    <a href="03-tcpip.html" class="sidebar-card">
+                        <span class="sidebar-card__num">03</span>
+                        <span class="sidebar-card__text">TCP/IP</span>
+                    </a>
+
+                    <a href="04-www.html" class="sidebar-card">
+                        <span class="sidebar-card__num">04</span>
+                        <span class="sidebar-card__text">WWW</span>
+                    </a>
+
+                    <a href="05-web1.html" class="sidebar-card">
+                        <span class="sidebar-card__num">05</span>
+                        <span class="sidebar-card__text">WEB 1.0</span>
+                    </a>
+
+                    <a href="06-web2.html" class="sidebar-card">
+                        <span class="sidebar-card__num">06</span>
+                        <span class="sidebar-card__text">WEB 2.0</span>
+                    </a>
+
+                    <a href="07-modern.html" class="sidebar-card">
+                        <span class="sidebar-card__num">07</span>
+                        <span class="sidebar-card__text">Современность</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="sidebar-block sidebar-block--quote">
+                <p>«Интернет — это не технология. Это способ существования информации».</p>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+
+            <div class="site-footer__col">
+                <h4>Автор сайта</h4>
+                <p>Рыбакова Ксения Эдуардовна</p>
+                <p>Группа: 335</p>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>Связь</h4>
+                <ul>
+                    <li>Email: <a href="mailto:krybakova296@gmail.com">krybakova296@gmail.com</a></li>
+                    <li>ВК: <a href="https://vk.com/k__rybakova">vk.com/k__rybakova</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>GitHub</h4>
+                <ul>
+                    <li><a href="https://github.com/Krybakova">github.com/Krybakova</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="site-footer__bottom">
+            <p>© 2026</p>
+        </div>
+    </footer>
+<button id="scrollTop" class="scroll-top" type="button" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="../script.js"></script>
+</body>
+</html>

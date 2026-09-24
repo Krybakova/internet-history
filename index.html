@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="История развития интернета: от первых идей до современности">
+    <title>NetHistory — История развития интернета</title>
+
+    <!-- UIkit 3: CSS-фреймворк -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css">
+
+    <!-- Свои стили -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js" defer></script>
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="site-header">
+        <nav class="site-nav">
+            <!-- Логотип -->
+            <a href="index.html" class="site-logo">NetHistory</a>
+
+            <!-- Меню для планшетов и десктопов (≥768px) -->
+            <ul class="site-menu uk-visible@m">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="pages/01-prehistory.html">1830–1960</a></li>
+                <li><a href="pages/02-arpanet.html">ARPANET</a></li>
+                <li><a href="pages/03-tcpip.html">TCP/IP</a></li>
+                <li><a href="pages/04-www.html">WWW</a></li>
+                <li><a href="pages/05-web1.html">WEB 1.0</a></li>
+                <li><a href="pages/06-web2.html">WEB 2.0</a></li>
+                <li><a href="pages/07-modern.html">Современность</a></li>
+            </ul>
+
+            <!-- Кнопка-бургер для мобильных (<768px) -->
+            <button class="site-burger uk-hidden@m" type="button" uk-toggle="target: #mobile-menu">
+                <span uk-icon="menu"></span>
+            </button>
+
+        </nav>
+    
+
+        <!-- Выезжающее мобильное меню -->
+        <div id="mobile-menu" uk-offcanvas>
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-default site-mobile-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pages/01-prehistory.html">1830–1960</a></li>
+                    <li><a href="pages/02-arpanet.html">ARPANET</a></li>
+                    <li><a href="pages/03-tcpip.html">TCP/IP</a></li>
+                    <li><a href="pages/04-www.html">WWW</a></li>
+                    <li><a href="pages/05-web1.html">WEB 1.0</a></li>
+                    <li><a href="pages/06-web2.html">WEB 2.0</a></li>
+                    <li><a href="pages/07-modern.html">Современность</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+   <!-- ОБЁРТКА: main + aside -->
+    <div class="site-wrapper">
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+        <main class="site-main">
+    <h1>Добро пожаловать в NetHistory</h1>
+
+    <p>Этот сайт расскажет об истории развития интернета - от первых идей XIX века до современности. Вы узнаете, как появились первые компьютерные сети, как был придуман протокол TCP/IP, кто создал Всемирную паутину и как интернет стал частью повседневной жизни миллиардов людей.</p>
+    <figure class="site-figure">
+        <img
+        src="images/internet-history.jpg"
+        srcset="images/internet-history-small.jpg 400w,
+                images/internet-history-medium.jpg 800w,
+                images/internet-history.jpg 1200w"
+        sizes="(max-width: 768px) 100vw, 800px"
+        alt="Хронология развития интернета: от ARPANET до наших дней"
+        title="История развития интернета"
+        loading="lazy"
+        class="site-figure__img">
+        <figcaption class="site-figure__caption">
+            Хронология развития интернета: от ARPANET до современности
+        </figcaption>
+    </figure>
+    <h2>Что такое интернет</h2>
+
+    <p><strong>Интернет</strong> - это глобальная сеть компьютеров, соединённых между собой. Слово «интернет» происходит от <em>internetwork</em> - «объединение сетей». Это не одна большая сеть, а множество сетей, которые соединены и могут обмениваться данными друг с другом.</p>
+
+    <p>Сегодня через интернет работают, учатся, общаются, платят за покупки, смотрят видео и управляют устройствами. Без него невозможно представить современный мир - но так было не всегда. Интернет прошёл долгий путь от военного проекта до глобальной инфраструктуры.</p>
+
+    <h2>Что вы найдёте на сайте</h2>
+
+    <ul>
+        <li><strong>1830–1960</strong> - предыстория: телеграф, первые вычислительные машины, идея глобальной сети.</li>
+        <li><strong>ARPANET</strong> - первая компьютерная сеть и её первые четыре узла.</li>
+        <li><strong>TCP/IP</strong> - протоколы, на которых работает весь современный интернет.</li>
+        <li><strong>WWW</strong> - Всемирная паутина Тима Бернерса-Ли и первый сайт.</li>
+        <li><strong>WEB 1.0</strong> - эпоха статичного веба, первые браузеры.</li>
+        <li><strong>WEB 2.0</strong> - соцсети, блоги, интерактивность.</li>
+        <li><strong>Современность</strong> - мобильный интернет, облака, IoT, ИИ.</li>
+    </ul>
+
+    <h2>Хронология ключевых событий</h2>
+
+    <p>Ниже - краткая хронология самых важных дат в истории интернета.</p>
+
+    <table class="site-table">
+        <caption>Ключевые даты в истории интернета</caption>
+        <thead>
+            <tr>
+                <th>Год</th>
+                <th>Событие</th>
+                <th>Значение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1969</td>
+                <td>Запуск ARPANET</td>
+                <td>Первая компьютерная сеть</td>
+            </tr>
+            <tr>
+                <td>1974</td>
+                <td>Идея TCP/IP</td>
+                <td>Серф и Кан описали единый протокол</td>
+            </tr>
+            <tr>
+                <td>1983</td>
+                <td>Переход ARPANET на TCP/IP</td>
+                <td>«День рождения» современного интернета</td>
+            </tr>
+            <tr>
+                <td>1989</td>
+                <td>Идея WWW</td>
+                <td>Тим Бернерс-Ли предложил Всемирную паутину</td>
+            </tr>
+            <tr>
+                <td>1991</td>
+                <td>Первый сайт</td>
+                <td>Запущен info.cern.ch</td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td>Браузер Mosaic</td>
+                <td>Первый графический браузер</td>
+            </tr>
+            <tr>
+                <td>1998</td>
+                <td>Появление Google</td>
+                <td>Новый способ поиска информации</td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>Запуск iPhone</td>
+                <td>Начало мобильной эпохи интернета</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Запуск 5G</td>
+                <td>Гигабитные скорости в мобильной сети</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Видео об истории интернета</h2>
+
+    <p>Ниже - документальный ролик об истории развития интернета.</p>
+
+    <div class="video-wrap">
+        <iframe
+            src="https://rutube.ru/play/embed/d0083237b05b97cfdaebb13094d44443/"
+            frameborder="0"
+            allowfullscreen
+            title="История интернета - документальный фильм">
+        </iframe>
+    </div>
+
+</main>
+
+        <!-- САЙДБАР -->
+        <aside class="site-sidebar">
+
+            <div class="sidebar-block">
+                <h3 class="sidebar-block__title">Разделы</h3>
+                <div class="sidebar-cards">
+
+                    <a href="pages/01-prehistory.html" class="sidebar-card">
+                        <span class="sidebar-card__num">01</span>
+                        <span class="sidebar-card__text">1830–1960</span>
+                    </a>
+
+                    <a href="pages/02-arpanet.html" class="sidebar-card">
+                        <span class="sidebar-card__num">02</span>
+                        <span class="sidebar-card__text">ARPANET</span>
+                    </a>
+
+                    <a href="pages/03-tcpip.html" class="sidebar-card">
+                        <span class="sidebar-card__num">03</span>
+                        <span class="sidebar-card__text">TCP/IP</span>
+                    </a>
+
+                    <a href="pages/04-www.html" class="sidebar-card">
+                        <span class="sidebar-card__num">04</span>
+                        <span class="sidebar-card__text">WWW</span>
+                    </a>
+
+                    <a href="pages/05-web1.html" class="sidebar-card">
+                        <span class="sidebar-card__num">05</span>
+                        <span class="sidebar-card__text">WEB 1.0</span>
+                    </a>
+
+                    <a href="pages/06-web2.html" class="sidebar-card">
+                        <span class="sidebar-card__num">06</span>
+                        <span class="sidebar-card__text">WEB 2.0</span>
+                    </a>
+
+                    <a href="pages/07-modern.html" class="sidebar-card">
+                        <span class="sidebar-card__num">07</span>
+                        <span class="sidebar-card__text">Современность</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="sidebar-block sidebar-block--quote">
+                <p>«Интернет — это не технология. Это способ существования информации».</p>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+
+            <div class="site-footer__col">
+                <h4>Автор сайта</h4>
+                <p>Рыбакова Ксения Эдуардовна</p>
+                <p>Группа: 335</p>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>Связь</h4>
+                <ul>
+                    <li>Email: <a href="krybakova296@gmail.com">krybakova296@gmail.com</a></li>
+                    <li>ВК: <a href="https://vk.ru/k__rybakova">vk.com/k__rybakova</a></li>
+                </ul>
+            </div>
+
+            <div class="site-footer__col">
+                <h4>GitHub</h4>
+                <ul>
+                    <li><a href="https://github.com/Krybakova">github.com/Krybakova</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="site-footer__bottom">
+            <p>© 2026</p>
+        </div>
+    </footer>
+<!-- Кнопка "Наверх" -->
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
