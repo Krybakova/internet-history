@@ -61,11 +61,22 @@ ul {
 .site-logo:hover,
 .site-logo:focus,
 .site-logo:active {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.6rem;
     font-weight: bold;
     color: #ffd700;
     letter-spacing: 1px;
     text-decoration: none;
+}
+
+.site-logo svg {
+    transition: transform 0.5s ease;
+}
+
+.site-logo:hover svg {
+    transform: rotate(180deg);
 }
 
 .site-menu {
@@ -415,4 +426,28 @@ ul {
 
 .video_wrap iframe {
     border: 0;
+}
+/* ============================================
+   САЙДБАР: ФАКТ И ИНТЕРЕСНОЕ
+   ============================================ */
+.sidebar-fact {
+    font-style: italic;
+    color: #000000;
+    line-height: 1.5;
+    border-left: 3px solid #ffd700;
+    padding-left: 12px;
+}
+
+.sidebar-link {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed #ffd700;
+    transition: color 0.3s, border-color 0.3s;
+    word-break: break-all;
+}
+
+.sidebar-link:hover {
+    color: #ffd700;
+    border-bottom-color: #ffd700;
 }
