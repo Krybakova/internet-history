@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,23 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js" defer></script>
 </head>
+
 <body>
 
     <header class="site-header">
         <nav class="site-nav">
 
             <a href="../index.html" class="site-logo">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-    </svg>
-    NetHistory
-</a>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                </svg>
+                NetHistory
+            </a>
 
             <ul class="site-menu uk-visible@m">
                 <li><a href="../index.html">Главная</a></li>
@@ -62,59 +67,68 @@
     <div class="site-wrapper">
 
         <main class="site-main">
-    <h1>TCP/IP</h1>
+            <h1>TCP/IP</h1>
 
-    <p><strong>TCP/IP</strong> - это набор протоколов, на котором работает весь современный интернет. Без него не было бы ни сайтов, ни электронной почты, ни видеозвонков. Название расшифровывается как <em>Transmission Control Protocol / Internet Protocol</em> - протокол управления передачей и межсетевой протокол.</p>
-    <figure class="site-figure">
-    <img
-        src="../images/tcpip-diagram.jpg"
-        srcset="../images/tcp_ip-small.jpg 400w,
+            <p><strong>TCP/IP</strong> - это набор протоколов, на котором работает весь современный интернет. Без него
+                не было бы ни сайтов, ни электронной почты, ни видеозвонков. Название расшифровывается как
+                <em>Transmission Control Protocol / Internet Protocol</em> - протокол управления передачей и межсетевой
+                протокол.</p>
+            <figure class="site-figure">
+                <img src="../images/tcpip-diagram.jpg" srcset="../images/tcp_ip-small.jpg 400w,
                 ../images/tcp_ip-medium.jpg 800w,
-                ../images/tcp_ip.jpg 1200w"
-        sizes="(max-width: 768px) 100vw, 800px"
-        alt="Схема работы протокола TCP/IP"
-        title="TCP/IP — схема работы протоколов"
-        loading="lazy"
-        class="site-figure__img">
-    <figcaption class="site-figure__caption">
-        Схема работы протоколов TCP/IP
-    </figcaption>
-</figure>
-    <p>До появления TCP/IP разные сети использовали собственные протоколы и не могли общаться друг с другом. Задача состояла в том, чтобы объединить их в единую «сеть сетей» - так появился интернет.</p>
+                ../images/tcp_ip.jpg 1200w" sizes="(max-width: 768px) 100vw, 800px" alt="Схема работы протокола TCP/IP"
+                    title="TCP/IP — схема работы протоколов" loading="lazy" class="site-figure__img">
+                <figcaption class="site-figure__caption">
+                    Схема работы протоколов TCP/IP
+                </figcaption>
+            </figure>
+            <p>До появления TCP/IP разные сети использовали собственные протоколы и не могли общаться друг с другом.
+                Задача состояла в том, чтобы объединить их в единую «сеть сетей» - так появился интернет.</p>
 
-    <h2>Разработка</h2>
+            <h2>Разработка</h2>
 
-    <p>В 1974 году <strong>Винтон Серф</strong> и <strong>Роберт Кан</strong> опубликовали статью «Протокол для межсетевого обмена пакетами». В ней они описали, как соединить разные сети в одну. За эту работу их позже назвали «отцами интернета».</p>
+            <p>В 1974 году <strong>Винтон Серф</strong> и <strong>Роберт Кан</strong> опубликовали статью «Протокол для
+                межсетевого обмена пакетами». В ней они описали, как соединить разные сети в одну. За эту работу их
+                позже назвали «отцами интернета».</p>
 
-    <p>К 1978 году протокол был разделён на два:</p>
+            <p>К 1978 году протокол был разделён на два:</p>
 
-    <ul>
-        <li><strong>TCP</strong> (Transmission Control Protocol) - отвечает за надёжную передачу данных: разбивает информацию на пакеты, проверяет, что все они дошли, и собирает обратно в правильном порядке.</li>
-        <li><strong>IP</strong> (Internet Protocol) - отвечает за адресацию: каждому устройству присваивается уникальный адрес, по которому пакеты находят нужный компьютер.</li>
-    </ul>
+            <ul>
+                <li><strong>TCP</strong> (Transmission Control Protocol) - отвечает за надёжную передачу данных:
+                    разбивает информацию на пакеты, проверяет, что все они дошли, и собирает обратно в правильном
+                    порядке.</li>
+                <li><strong>IP</strong> (Internet Protocol) - отвечает за адресацию: каждому устройству присваивается
+                    уникальный адрес, по которому пакеты находят нужный компьютер.</li>
+            </ul>
 
-    <h2>Как это работает</h2>
+            <h2>Как это работает</h2>
 
-    <p>Когда вы открываете сайт, ваш компьютер отправляет запрос. TCP разбивает его на пакеты, IP присваивает каждому адрес отправителя и получателя. Пакеты идут через десятки промежуточных узлов, могут добираться разными путями. На сервере TCP собирает их обратно и восстанавливает исходный запрос. Ответ возвращается тем же путём.</p>
+            <p>Когда вы открываете сайт, ваш компьютер отправляет запрос. TCP разбивает его на пакеты, IP присваивает
+                каждому адрес отправителя и получателя. Пакеты идут через десятки промежуточных узлов, могут добираться
+                разными путями. На сервере TCP собирает их обратно и восстанавливает исходный запрос. Ответ возвращается
+                тем же путём.</p>
 
-    <p>Именно поэтому интернет устойчив: если один маршрут недоступен, пакеты пойдут другим.</p>
+            <p>Именно поэтому интернет устойчив: если один маршрут недоступен, пакеты пойдут другим.</p>
 
-    <h2>1 января 1983 года</h2>
+            <h2>1 января 1983 года</h2>
 
-    <p>Это ключевая дата в истории интернета. В этот день <strong>ARPANET</strong> полностью перешла на TCP/IP. Все старые протоколы были отключены. Этот момент называют «днём рождения интернета» в его современном виде - с этого момента разные сети могли соединяться друг с другом.</p>
+            <p>Это ключевая дата в истории интернета. В этот день <strong>ARPANET</strong> полностью перешла на TCP/IP.
+                Все старые протоколы были отключены. Этот момент называют «днём рождения интернета» в его современном
+                виде - с этого момента разные сети могли соединяться друг с другом.</p>
 
-    <p>Сегодня TCP/IP используется везде: в браузерах, мессенджерах, видеосвязи, онлайн-играх, умных устройствах. Это фундамент, на котором держится вся цифровая инфраструктура мира.</p>
+            <p>Сегодня TCP/IP используется везде: в браузерах, мессенджерах, видеосвязи, онлайн-играх, умных
+                устройствах. Это фундамент, на котором держится вся цифровая инфраструктура мира.</p>
 
-    <h2>Ключевые даты</h2>
+            <h2>Ключевые даты</h2>
 
-    <ul>
-        <li><strong>1974</strong> - статья Серфа и Кана, идея TCP/IP.</li>
-        <li><strong>1978</strong> - разделение на TCP и IP.</li>
-        <li><strong>1981</strong> - стандарт TCP/IP опубликован.</li>
-        <li><strong>1983</strong> - ARPANET переходит на TCP/IP.</li>
-        <li><strong>1990-е</strong> - TCP/IP становится мировым стандартом.</li>
-    </ul>
-</main>
+            <ul>
+                <li><strong>1974</strong> - статья Серфа и Кана, идея TCP/IP.</li>
+                <li><strong>1978</strong> - разделение на TCP и IP.</li>
+                <li><strong>1981</strong> - стандарт TCP/IP опубликован.</li>
+                <li><strong>1983</strong> - ARPANET переходит на TCP/IP.</li>
+                <li><strong>1990-е</strong> - TCP/IP становится мировым стандартом.</li>
+            </ul>
+        </main>
 
         <aside class="site-sidebar">
 
@@ -160,17 +174,17 @@
                 </div>
             </div>
 
-            
-            <div class="sidebar-block">
-    <h3 class="sidebar-block__title">Случайный факт</h3>
-    <p id="randomFact" class="sidebar-fact">Загрузка...</p>
-</div>
 
-<div class="sidebar-block">
-    <h3 class="sidebar-block__title">Это интересно</h3>
-    <p>Первый сайт в истории интернета всё ещё работает - его можно открыть по адресу:</p>
-    <p><a href="http://info.cern.ch" target="_blank" class="sidebar-link">info.cern.ch</a></p>
-</div>
+            <div class="sidebar-block">
+                <h3 class="sidebar-block__title">Случайный факт</h3>
+                <p id="randomFact" class="sidebar-fact">Загрузка...</p>
+            </div>
+
+            <div class="sidebar-block">
+                <h3 class="sidebar-block__title">Это интересно</h3>
+                <p>Первый сайт в истории интернета всё ещё работает - его можно открыть по адресу:</p>
+                <p><a href="http://info.cern.ch" target="_blank" class="sidebar-link">info.cern.ch</a></p>
+            </div>
         </aside>
 
     </div>
@@ -205,10 +219,11 @@
             <p>© 2026</p>
         </div>
     </footer>
-<button id="scrollTop" class="scroll-top" type="button" aria-label="Наверх">
+    <button id="scrollTop" class="scroll-top" type="button" aria-label="Наверх">
         ↑
     </button>
 
     <script src="../script.js"></script>
 </body>
+
 </html>

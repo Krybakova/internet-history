@@ -19,9 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-// ============================================
+
 // СЛУЧАЙНЫЙ ФАКТ
-// ============================================
 var facts = [
     'Первое сообщение в ARPANET должно было быть «LOGIN», но система упала на «LO».',
     'ENIAC весил 30 тонн и использовал 17 000 электронных ламп.',
@@ -44,3 +43,38 @@ document.addEventListener('DOMContentLoaded', function () {
         factEl.textContent = facts[randomIndex];
     }
 });
+
+// ПРОСТОЙ ПОИСК ПО САЙТУ
+function searchSite(event) {
+    event.preventDefault();
+    var query = event.target.q.value.toLowerCase().trim();
+
+    if (!query) {
+        alert('Введите запрос');
+        return;
+    }
+
+    var pages = [
+        { keywords: ['arpnet', 'арпанет', 'сеть', 'узлы'], url: '02-arpanet.html', title: 'ARPANET' },
+        { keywords: ['tcp', 'ip', 'протокол', 'тисипи'], url: '03-tcpip.html', title: 'TCP/IP' },
+        { keywords: ['www', 'паутина', 'бернерс', 'сайт', 'url'], url: '04-www.html', title: 'WWW' },
+        { keywords: ['web 1', 'веб 1', 'mosaic', 'браузер', 'мосайк'], url: '05-web1.html', title: 'WEB 1.0' },
+        { keywords: ['web 2', 'веб 2', 'соцсеть', 'myspace', 'facebook'], url: '06-web2.html', title: 'WEB 2.0' },
+        { keywords: ['современность', 'мобильный', 'iot', 'облако', 'iphone'], url: '07-modern.html', title: 'Современность' },
+        { keywords: ['eniac', 'эниак', 'предыстория', 'телеграф', '1830'], url: '01-prehistory.html', title: '1830–1960' }
+    ];
+
+    var found = pages.find(function (page) {
+        return page.keywords.some(function (kw) {
+            return query.includes(kw) || kw.includes(query);
+        });
+    });
+
+    if (found) {
+        var isInPages = window.location.pathname.includes('/pages/');
+        var url = isInPages ? found.url : 'pages/' + found.url;
+        window.location.href = url;
+    } else {
+        alert('Ничего не найдено по запросу: ' + query);
+    }
+}
