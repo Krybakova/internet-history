@@ -318,7 +318,7 @@ ul {
 .site-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid #1a1a2e;
+    border: 2px solid #1a1a2e;
     font-size: 0.95rem;
     margin-top: 15px;
     border-radius: 8px;
@@ -337,7 +337,7 @@ ul {
 .site-table th,
 .site-table td {
     padding: 12px 15px;
-    border: 2px solid #1a1a2e;
+    border: 2px solid #cccccc;
     text-align: left;
 }
 
